@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Trybe
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Lucas Martins Vieira Nascimento](https://www.linkedin.com/in/lucasmvn/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
@@ -255,3 +256,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 35-5: _[Projeto - Tech news]()_
 
 # [...]
+=======
+Pasta destinada aos exercícios que serão desenvolvidos na Trybe durante todo o curso. :)
+>>>>>>> 8efb1aa1e33cf7534216032827aa1f1c9013b688
