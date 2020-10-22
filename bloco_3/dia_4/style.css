@@ -44,6 +44,8 @@ body {
     border: 5px double black;
     font-size: 17px;
     text-align: justify;
+    width: 75%;
+    display: inline-block;
 }
 .main-article h2 {
     text-decoration: underline;
@@ -62,5 +64,18 @@ body {
     text-align: center;
 }
 .power .power-image {
+    text-align: center;
+}
+.side-content {
+    float: right;
+    width: 20%;
+    border: 5px double black;
+    padding: 0 1.5%;
+    text-align: center;
+    height: 92.25em;
+}
+.footer {
+    margin-top: 20px;
+    border-top: 5px outset black;
     text-align: center;
 }
