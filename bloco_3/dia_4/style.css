@@ -40,3 +40,27 @@ body {
 .navigation a:hover, .navigation a:active, .navigation a:focus {
     background-color: #659dbd;
 }
+.main-article {
+    border: 5px double black;
+    font-size: 17px;
+    text-align: justify;
+}
+.main-article h2 {
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-article h3 {
+    text-decoration: underline;
+}
+.main-article section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.vision .vision-image {
+    text-align: center;
+}
+.power .power-image {
+    text-align: center;
+}
