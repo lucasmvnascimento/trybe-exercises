@@ -3,6 +3,7 @@ body {
     background-color: #fbeec1;
 }
 .header {
+    text-decoration: underline;
     background-color:#659dbd;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -30,7 +31,7 @@ body {
     background-color: #bc986a;
     color: black;
     padding: 5px;
-    border: 1px solid #659dbd;
+    border: 3px outset #659dbd;
     border-radius: 10px;
 }
 .navigation a:link, .navigation a:visited {
