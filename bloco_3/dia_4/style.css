@@ -19,25 +19,23 @@ body {
     border-top: none;
 }
 .navigation li {
-    font-style: 900;
-    color: black;
     display: inline-block;
-    margin-right: 100px;
     margin-top: 16px;
-    background-color: #bc986a;
-    color: black;
-    padding: 5px;
-    border: 2px solid #659dbd;
-    border-radius: 10px;
 }
 .navigation a {
     text-decoration: none;
+    font-style: 900;
+    color: black;
+    margin-right: 100px;
+    background-color: #bc986a;
+    color: black;
+    padding: 5px;
+    border: 1px solid #659dbd;
+    border-radius: 10px;
 }
 .navigation a:link, .navigation a:visited {
     color: black;
 }
-.navigation a:active, .navigation a:hover, .navigation a:focus {
+.navigation a:hover, .navigation a:active, .navigation a:focus {
     background-color: #659dbd;
-    padding: 5px;
-    border-radius: 0%; 
 }
