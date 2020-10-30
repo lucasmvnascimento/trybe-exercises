@@ -39,6 +39,43 @@
       </div>
     </div>
     <script>
+        function mudaTexto (tag) {
+            document.getElementsByTagName(tag)[0].innerHTML = "Desenvolvedor Full Stack !"
+        }
+        mudaTexto("p");
+        
+        function mudaCorQuadradoGrande (tag) {
+            document.getElementsByClassName(tag)[0].style.backgroundColor = "rgb(76,164,109)";
+        }
+        mudaCorQuadradoGrande ("main-content");
+
+        function mudaCorQudradoPequeno (tag) {
+            document.getElementsByClassName(tag)[0].style.backgroundColor = "white";
+        }
+        mudaCorQudradoPequeno ("center-content");
+
+        function corrigeTitulo (tag) {
+            document.getElementsByTagName(tag)[0].innerHTML = "Exercício 5.1 - JavaScript";
+        }
+        corrigeTitulo ("h1");
+
+        function maiusculo (tag) {
+            let aux = document.getElementsByTagName("p");
+            for (let i=0; i<aux.length; i+=1){
+                document.getElementsByTagName("p")[i].innerHTML = aux[i].innerHTML.toLocaleUpperCase();
+            }
+        }
+        maiusculo ("p");
+
+        function console (tag) {
+            let aux = document.getElementsByTagName("p");
+            for (i=0; i<aux.length; i+=1){
+                console.log(aux[i].innerHTML);
+            }
+        }
+        console("p");
+
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
