@@ -117,7 +117,7 @@ document.querySelector(".days-container").addEventListener('mouseout',zoomOut);
 // Exercicio 7
 function addTarefa (tarefa) {
   let elementoTarefa = document.createElement("span");
-  elementoTarefa.innerHTML = tarefa + "<br>";
+  elementoTarefa.innerText = tarefa;
   document.querySelector(".my-tasks").appendChild(elementoTarefa);
 }
 addTarefa("Cozinhar");
@@ -131,3 +131,17 @@ function task (cor) {
 task ("green");
 
 // Exercicio 9
+let corTask = document.querySelector(".my-tasks div");
+let estadoAtualTask = 0;
+function atribuiClasse () {
+  if (estadoAtualTask == 0){
+    corTask.className = "task-selected";
+    estadoAtualTask = 1;
+  } else if (estadoAtualTask == 1) {
+    corTask.className = "task";
+    estadoAtualTask = 0;
+  }
+}
+corTask.addEventListener('click',atribuiClasse);
+
+// Exercicio 10
