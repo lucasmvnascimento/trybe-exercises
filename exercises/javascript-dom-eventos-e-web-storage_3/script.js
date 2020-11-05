@@ -114,4 +114,20 @@ function zoomOut () {
 document.querySelector(".days-container").addEventListener('mouseover',zoomIn);
 document.querySelector(".days-container").addEventListener('mouseout',zoomOut);
 
-//
+// Exercicio 7
+function addTarefa (tarefa) {
+  let elementoTarefa = document.createElement("span");
+  elementoTarefa.innerHTML = tarefa + "<br>";
+  document.querySelector(".my-tasks").appendChild(elementoTarefa);
+}
+addTarefa("Cozinhar");
+
+// Exercicio 8
+function task (cor) {
+  let legenda = document.createElement("div");
+  legenda.style.backgroundColor = cor;
+  document.querySelector(".my-tasks").appendChild(legenda);
+}
+task ("green");
+
+// Exercicio 9
