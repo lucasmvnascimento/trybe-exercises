@@ -14,6 +14,7 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
+  // Exercicio 1
   let dezDaysList = [29,30];
   for (let i=1; i<32; i+=1){
     dezDaysList.push(i);
@@ -32,3 +33,32 @@ function createDaysOfTheWeek() {
     }
     days.appendChild(day);
     }
+
+// Exercicio 2
+let feriados = "Feriados";
+function criaBotaoFeriados (feriados) {
+  let botaoFeriados = document.createElement('button');
+  botaoFeriados.innerText = feriados;
+  botaoFeriados.className = "btn-holiday";
+  document.querySelector(".buttons-container").appendChild (botaoFeriados);
+}
+criaBotaoFeriados(feriados);
+
+// Exercicio 3
+diasFeriados = document.querySelectorAll (".holiday");
+botaoFeriados = document.querySelector(".btn-holiday");
+let estadoAtual = 0;
+function mudaCorFeriados () {
+  if (estadoAtual == 0){
+    for (let i=0; i<diasFeriados.length; i+=1){
+      diasFeriados[i].style.backgroundColor = "blue";
+    }
+    estadoAtual = 1;
+  }else if (estadoAtual == 1) {
+    for (let i=0; i<diasFeriados.length; i+=1){
+      diasFeriados[i].style.backgroundColor = "rgb(238,238,238)";
+    }
+    estadoAtual = 0;
+  }
+}
+botaoFeriados.addEventListener('click', mudaCorFeriados);
