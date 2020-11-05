@@ -96,3 +96,22 @@ function mudaCorSexta () {
   }
 }
 botaoSextas.addEventListener('click',mudaCorSexta);
+
+// Exercicio 6
+let dias = document.querySelectorAll(".day");
+function zoomIn () {
+  for (let i=0; i<dias.length; i+=1){
+  dias[i].addEventListener ('mouseover',function (){
+    dias[i].style.fontSize = "50px";
+  });
+  }
+}
+function zoomOut () {
+  for (let i=0; i<dias.length; i+=1){
+    dias[i].style.fontSize = "20px";
+    }
+}
+document.querySelector(".days-container").addEventListener('mouseover',zoomIn);
+document.querySelector(".days-container").addEventListener('mouseout',zoomOut);
+
+//
