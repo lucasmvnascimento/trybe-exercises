@@ -51,17 +51,17 @@ diasFeriados = document.querySelectorAll (".holiday");
 botaoFeriados = document.querySelector(".btn-holiday");
 let estadoAtualFeriado = 0;
 function mudaCorFeriados () {
-  if (estadoAtualFeriado == 0){
-    for (let i=0; i<diasFeriados.length; i+=1){
-      diasFeriados[i].style.backgroundColor = "blue";
-    }
-    estadoAtualFeriado = 1;
-  }else if (estadoAtualFeriado == 1) {
-    for (let i=0; i<diasFeriados.length; i+=1){
-      diasFeriados[i].style.backgroundColor = "rgb(238,238,238)";
-    }
-    estadoAtualFeriado = 0;
-  }
+if (estadoAtualFeriado == 0){
+for (let i=0; i<diasFeriados.length; i+=1){
+diasFeriados[i].style.backgroundColor = "blue";
+}
+estadoAtualFeriado = 1;
+}else if (estadoAtualFeriado == 1) {
+for (let i=0; i<diasFeriados.length; i+=1){
+diasFeriados[i].style.backgroundColor = "rgb(238,238,238)";
+}
+estadoAtualFeriado = 0;
+}
 }
 botaoFeriados.addEventListener('click', mudaCorFeriados);
 
@@ -81,21 +81,16 @@ for (let i=0; i<sextas.length; i+=1){
   sextasOriginais.push(sextas[i].innerText);
 }
 let botaoSextas = document.querySelector("#btn-friday");
-let estadoAtualSexta = 0;
-function mudaCorSexta () {
-  if (estadoAtualSexta == 0){
-    for(let i=0; i<sextas.length; i+=1) {
-      sextas[i].innerText = "SEXTOU!";
-    }
-    estadoAtualSexta = 1;
-  } else if (estadoAtualSexta == 1) {
-    for(let i=0; i<sextas.length; i+=1) {
+function mudaTextoSexta () {
+  for (let i=0; i<sextas.length; i+=1){
+    if (sextas[i].innerText === "SEXTOU!"){
       sextas[i].innerText = sextasOriginais[i];
+    } else {
+      sextas[i].innerText = "SEXTOU!"
     }
-    estadoAtualSexta = 0;
   }
 }
-botaoSextas.addEventListener('click',mudaCorSexta);
+botaoSextas.addEventListener("click",mudaTextoSexta);
 
 // Exercicio 6
 let dias = document.querySelectorAll(".day");
