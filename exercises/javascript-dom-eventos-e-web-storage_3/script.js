@@ -49,19 +49,14 @@ criaBotaoFeriados(feriados);
 // Exercicio 3
 diasFeriados = document.querySelectorAll (".holiday");
 botaoFeriados = document.querySelector(".btn-holiday");
-let estadoAtualFeriado = 0;
 function mudaCorFeriados () {
-if (estadoAtualFeriado == 0){
-for (let i=0; i<diasFeriados.length; i+=1){
-diasFeriados[i].style.backgroundColor = "blue";
-}
-estadoAtualFeriado = 1;
-}else if (estadoAtualFeriado == 1) {
-for (let i=0; i<diasFeriados.length; i+=1){
-diasFeriados[i].style.backgroundColor = "rgb(238,238,238)";
-}
-estadoAtualFeriado = 0;
-}
+  for (let i=0; i<diasFeriados.length; i+=1){
+    if (diasFeriados[i].style.backgroundColor === "blue"){
+      diasFeriados[i].style.backgroundColor = "rgb(238,238,238)";
+    } else {
+      diasFeriados[i].style.backgroundColor = "blue";
+    }
+  }
 }
 botaoFeriados.addEventListener('click', mudaCorFeriados);
 
