@@ -135,14 +135,11 @@ function atribuiClasse () {
 corTask.addEventListener('click',atribuiClasse);
 
 // Exercicio 10
-estadoAtualCorDia = 0;
 function atribuiCor(event) {
-  if (estadoAtualCorDia == 0) {
-    event.target.style.color = "green";
-    estadoAtualCorDia = 1;
-  } else if (estadoAtualCorDia == 1) {
+  if (event.target.style.color === "green") {
     event.target.style.color = "rgb(119,119,119)";
-    estadoAtualCorDia = 0;
+  } else {
+    event.target.style.color = "green";
   }
 }
 document.querySelector(".days-container").addEventListener("click",atribuiCor);
