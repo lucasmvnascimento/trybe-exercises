@@ -66,10 +66,14 @@ const books = [
 const expectedResult = false;
 
 function authorUnique() {
-  return books.every((book)=>
-    !books.some((bookSome)=> 
-      (bookSome.author.birthYear === book.author.birthYear) && (bookSome.id !== book.id)
-  ));
+  let status = true;
+  const searchAuthor = books.forEach ((book) => {
+    const searchMatchYear = books.some((authorYear) => (authorYear.author.birthYear === book.author.birthYear && authorYear.id !== book.id));
+    if (searchMatchYear) {
+      status = false;
+    }
+  });
+  return status;
 }
 
 assert.equal(authorUnique(), expectedResult);
