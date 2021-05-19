@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>FORMULÁRIO</header>
+    <form action="" method="GET" enctype="multipart/form-data">
+        <fieldset>
+            <label for="input-name">Nome:
+                <input type="text" name="nome" id="input-name" maxlength="40" required>
+            </label>
+            <br>
+            <label for="input-email">Email:
+                <input type="email" name="email" id="input-email" maxlength="50" required>
+            </label>
+            <br>
+            <label for="input-cpf">CPF:
+                <input type="text" name="cpf" id="input-cpf" maxlength="11" required>
+            </label>
+            <br>
+            <label for="input-address">Endereço:
+                <input type="text" name="endereco" id="input-address" maxlength="200" required>
+            </label>
+            <br>
+            <label for="input-city">Cidade:
+                <input type="text" name="cidade" id="input-address" maxlength="28" required>
+            </label>
+            <br>
+            <label for="input-state">Estado:
+                <select name="estado" id="input-state" required>
+                    <option value="none"></option>
+                </select>
+            </label>
+            <br>
+            <label for="input-home">Casa
+                <input type="radio" name="home" id="input-home" required>
+            </label>
+            <label for="input-apt">Apartamento
+                <input type="radio" name="home" id="input-apt" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <p>Resumo do currículo:</p>
+            <textarea name="curriculo" id="input-curriculum" maxlength="1000" cols="30" rows="10" required></textarea>
+            <br>
+            <label for="input-job">Cargo:
+                <input type="text" name="cargo" id="input-job" maxlength="40" required>
+            </label>
+            <br>
+            <label for="input-dcpt">Descrição do cargo:
+                <input type="text" name="desc-cargo" id="input-dscpt" maxlength="500" required>
+            </label>
+            <br>
+            <label for="input-date">Data de início:
+                <input type="date" name="date-job" id="input-date" required>
+            </label>
+        </fieldset>
+        <fieldset   class="send-button-container">
+            <button type="submit" class="send-button">Enviar</button>
+        </fieldset>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

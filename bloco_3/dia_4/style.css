@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+    background-color: #fbeec1;
+}
+.header {
+    text-decoration: underline;
+    background-color:#659dbd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: 5px double black;
+    border-bottom: 1px solid black;
+
+}
+.navigation {
+    background-color: #daad86;
+    text-align: center;
+    margin-top: -16px;
+    border: 5px double black;
+    border-top: none;
+}
+.navigation li {
+    display: inline-block;
+    margin-top: 16px;
+}
+.navigation a {
+    text-decoration: none;
+    font-style: 900;
+    color: black;
+    margin-right: 100px;
+    background-color: #bc986a;
+    color: black;
+    padding: 5px;
+    border: 3px outset #659dbd;
+    border-radius: 10px;
+}
+.navigation a:link, .navigation a:visited {
+    color: black;
+}
+.navigation a:hover, .navigation a:active, .navigation a:focus {
+    background-color: #659dbd;
+}
+.main-article {
+    border: 5px double black;
+    font-size: 17px;
+    text-align: justify;
+    width: 70%;
+    display: inline-block;
+}
+.main-article h2 {
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-article h3 {
+    text-decoration: underline;
+}
+.main-article section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.vision .vision-image {
+    text-align: center;
+}
+.power .power-image {
+    text-align: center;
+}
+.side-content {
+    float: right;
+    width: 20%;
+    border: 5px double black;
+    padding: 0 1.5%;
+    text-align: center;
+    height: 92.25em;
+}
+.footer {
+    margin-top: 20px;
+    border-top: 5px outset black;
+    text-align: center;
+}
